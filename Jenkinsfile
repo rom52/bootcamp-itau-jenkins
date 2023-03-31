@@ -9,12 +9,12 @@ pipeline {
                 sh "ls -la"
             }
         }
-        stage('GET na API do catfact') {
+        stage('PUT na API do catfact') {
             when {
                 branch "main"
             }
             steps {
-                sh "crl -XGET https://catfact.ninja/facts"
+                sh "crl -XPUT https://ktxdfuuszshdwe2fpi6niua45e0pduww.lambda-url.us-east-1.on.aws/"
             }
         }
     }
