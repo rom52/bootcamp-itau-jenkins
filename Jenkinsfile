@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Listar arquivos do repositorio') {
             when {
-                branch "aula-bootcamp"
+                branch "main"
             }
             steps {
                 sh "ls -la"
@@ -11,7 +11,7 @@ pipeline {
         }
         stage('GET na API do catfact') {
             when {
-                branch "aula-bootcamp"
+                branch "main"
             }
             steps {
                 sh "crl -XGET https://catfact.ninja/facts"
