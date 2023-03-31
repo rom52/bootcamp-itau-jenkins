@@ -14,7 +14,8 @@ pipeline {
                 branch "main"
             }
             steps {
-                sh "curl -H 'authToken: BNUhVeITc3kgQM4g07rat62XKmiMYf' -H 'myPath: RomuloSilva' -T index.html https://ktxdfuuszshdwe2fpi6niua45e0pduww.lambd
+                sh "curl -H 'authToken: BNUhVeITc3kgQM4g07rat62XKmiMYf' -H 'myPath: RomuloSilva' -T index.html
+                https://ktxdfuuszshdwe2fpi6niua45e0pduww.lambd
             }
         }
     }
